@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnikyevLib", "AnikyevLib\An
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxinLib", "MaxinLib\MaxinLib.csproj", "{0BD271E4-59EE-4381-941E-9255B280FECA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharafutdinovaLib", "SharafutdinovaLib\SharafutdinovaLib.csproj", "{C7237617-E2B6-4735-857B-1F9E1A9C691F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{0BD271E4-59EE-4381-941E-9255B280FECA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0BD271E4-59EE-4381-941E-9255B280FECA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0BD271E4-59EE-4381-941E-9255B280FECA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7237617-E2B6-4735-857B-1F9E1A9C691F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7237617-E2B6-4735-857B-1F9E1A9C691F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7237617-E2B6-4735-857B-1F9E1A9C691F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7237617-E2B6-4735-857B-1F9E1A9C691F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
