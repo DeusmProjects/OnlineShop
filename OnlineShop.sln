@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxinLib", "MaxinLib\MaxinL
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharafutdinovaLib", "SharafutdinovaLib\SharafutdinovaLib.csproj", "{C7237617-E2B6-4735-857B-1F9E1A9C691F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsAnikyev", "WindowsFormsAnikyev\WindowsFormsAnikyev.csproj", "{0E9B8DB0-61DE-4310-AD43-D23EFDD382E1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{C7237617-E2B6-4735-857B-1F9E1A9C691F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7237617-E2B6-4735-857B-1F9E1A9C691F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7237617-E2B6-4735-857B-1F9E1A9C691F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E9B8DB0-61DE-4310-AD43-D23EFDD382E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E9B8DB0-61DE-4310-AD43-D23EFDD382E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E9B8DB0-61DE-4310-AD43-D23EFDD382E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E9B8DB0-61DE-4310-AD43-D23EFDD382E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
