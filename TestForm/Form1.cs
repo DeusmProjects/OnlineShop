@@ -22,11 +22,12 @@ namespace TestForm
         private void Button1_Click(object sender, EventArgs e)
         {
             var city = controlListBoxSelected1.SelectedText;
+            var index = controlListBoxSelected1.SelectedIndex;
 
             if (!city.Equals(""))
             {
                 MessageBox.Show(
-                    $"Выбран город {city}");
+                    $"Выбран город {city} - {index}");
             }
             else
             {
