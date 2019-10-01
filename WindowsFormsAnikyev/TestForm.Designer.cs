@@ -29,12 +29,14 @@
         private void InitializeComponent()
         {
             this.buttonChangingChoosed = new System.Windows.Forms.Button();
-            this.controlCheckedListBoxSelected1 = new AnikyevLib.ControlCheckedListBoxSelected();
+            this.controlTextBoxEmail1 = new AnikyevLib.ControlTextBoxEmail();
+            this.controlCheckedListBox1 = new AnikyevLib.ControlCheckedListBox();
+            this.controlTreeView1 = new AnikyevLib.ControlTreeView();
             this.SuspendLayout();
             // 
             // buttonChangingChoosed
             // 
-            this.buttonChangingChoosed.Location = new System.Drawing.Point(28, 292);
+            this.buttonChangingChoosed.Location = new System.Drawing.Point(46, 183);
             this.buttonChangingChoosed.Name = "buttonChangingChoosed";
             this.buttonChangingChoosed.Size = new System.Drawing.Size(225, 23);
             this.buttonChangingChoosed.TabIndex = 1;
@@ -42,22 +44,39 @@
             this.buttonChangingChoosed.UseVisualStyleBackColor = true;
             this.buttonChangingChoosed.Click += new System.EventHandler(this.buttonChangingChoosed_Click);
             // 
-            // controlCheckedListBoxSelected1
+            // controlTextBoxEmail1
             // 
-            this.controlCheckedListBoxSelected1.CheckedIndeces = null;
-            this.controlCheckedListBoxSelected1.Location = new System.Drawing.Point(12, 12);
-            this.controlCheckedListBoxSelected1.Name = "controlCheckedListBoxSelected1";
-            this.controlCheckedListBoxSelected1.Size = new System.Drawing.Size(297, 165);
-            this.controlCheckedListBoxSelected1.TabIndex = 0;
-            this.controlCheckedListBoxSelected1.CheckedListBoxSelectedElementChoose += new System.EventHandler(this.controlCheckedListBoxSelected_CheckedListBoxSelectedElementsChange);
+            this.controlTextBoxEmail1.Location = new System.Drawing.Point(12, 234);
+            this.controlTextBoxEmail1.MaximumSize = new System.Drawing.Size(1000, 23);
+            this.controlTextBoxEmail1.Name = "controlTextBoxEmail1";
+            this.controlTextBoxEmail1.Size = new System.Drawing.Size(297, 23);
+            this.controlTextBoxEmail1.TabIndex = 2;
+            // 
+            // controlCheckedListBox1
+            // 
+            this.controlCheckedListBox1.CheckedIndeces = null;
+            this.controlCheckedListBox1.Location = new System.Drawing.Point(12, 12);
+            this.controlCheckedListBox1.Name = "controlCheckedListBox1";
+            this.controlCheckedListBox1.Size = new System.Drawing.Size(297, 165);
+            this.controlCheckedListBox1.TabIndex = 0;
+            this.controlCheckedListBox1.CheckedListBoxSelectedElementChoose += new System.EventHandler(this.controlCheckedListBoxSelected_CheckedListBoxSelectedElementsChange);
+            // 
+            // controlTreeView1
+            // 
+            this.controlTreeView1.Location = new System.Drawing.Point(349, 12);
+            this.controlTreeView1.Name = "controlTreeView1";
+            this.controlTreeView1.Size = new System.Drawing.Size(243, 207);
+            this.controlTreeView1.TabIndex = 3;
             // 
             // TestForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(345, 365);
+            this.ClientSize = new System.Drawing.Size(616, 278);
+            this.Controls.Add(this.controlTreeView1);
+            this.Controls.Add(this.controlTextBoxEmail1);
             this.Controls.Add(this.buttonChangingChoosed);
-            this.Controls.Add(this.controlCheckedListBoxSelected1);
+            this.Controls.Add(this.controlCheckedListBox1);
             this.Name = "TestForm";
             this.Text = "TestForm";
             this.ResumeLayout(false);
@@ -66,7 +85,9 @@
 
         #endregion
 
-        private AnikyevLib.ControlCheckedListBoxSelected controlCheckedListBoxSelected1;
+        private AnikyevLib.ControlCheckedListBox controlCheckedListBox1;
         private System.Windows.Forms.Button buttonChangingChoosed;
+        private AnikyevLib.ControlTextBoxEmail controlTextBoxEmail1;
+        private AnikyevLib.ControlTreeView controlTreeView1;
     }
 }

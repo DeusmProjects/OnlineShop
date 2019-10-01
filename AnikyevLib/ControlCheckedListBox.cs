@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace AnikyevLib
 {
-    public partial class ControlCheckedListBoxSelected : UserControl
+    public partial class ControlCheckedListBox : UserControl
     {
         /// <summary>
         /// Порядковые номера выбранных элементов
@@ -73,16 +73,16 @@ namespace AnikyevLib
         /// <summary>
         /// Конструктор
         /// </summary>
-        public ControlCheckedListBoxSelected()
+        public ControlCheckedListBox()
         {
             InitializeComponent();
-            checkedListBox.SelectedIndexChanged += (sender, e) => {
+            checkedListBox.ItemCheck += (sender, e) => {
                 _checkedListBoxSelectedElementChoose?.Invoke(sender, e);
             };
         }
 
         /// <summary>
-        /// Заполнение списка значениями из справочника
+        /// Заполнение списка значениями из листа
         /// </summary>
         /// <param name="type">тип-справочник</param>
         public void LoadList(List<string> elements)

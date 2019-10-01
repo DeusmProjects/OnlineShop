@@ -1,6 +1,6 @@
 ﻿namespace AnikyevLib
 {
-    partial class ControlCheckedListBoxSelected
+    partial class ControlTextBoxEmail
     {
         /// <summary> 
         /// Обязательная переменная конструктора.
@@ -28,31 +28,41 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.checkedListBox = new System.Windows.Forms.CheckedListBox();
+            this.components = new System.ComponentModel.Container();
+            this.textBox = new System.Windows.Forms.TextBox();
+            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
-            // checkedListBox
+            // textBox
             // 
-            this.checkedListBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkedListBox.FormattingEnabled = true;
-            this.checkedListBox.Location = new System.Drawing.Point(0, 0);
-            this.checkedListBox.Name = "checkedListBox";
-            this.checkedListBox.Size = new System.Drawing.Size(274, 175);
-            this.checkedListBox.TabIndex = 0;
+            this.textBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox.Location = new System.Drawing.Point(0, 0);
+            this.textBox.Name = "textBox";
+            this.textBox.Size = new System.Drawing.Size(200, 22);
+            this.textBox.TabIndex = 0;
             // 
-            // ControlCheckedListBoxSelected
+            // toolTip
+            // 
+            this.toolTip.AutoPopDelay = 5000;
+            this.toolTip.InitialDelay = 100;
+            this.toolTip.ReshowDelay = 0;
+            // 
+            // ControlTextBoxEmail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.checkedListBox);
-            this.Name = "ControlCheckedListBoxSelected";
-            this.Size = new System.Drawing.Size(274, 175);
+            this.Controls.Add(this.textBox);
+            this.MaximumSize = new System.Drawing.Size(1000, 23);
+            this.Name = "ControlTextBoxEmail";
+            this.Size = new System.Drawing.Size(200, 23);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.CheckedListBox checkedListBox;
+        private System.Windows.Forms.TextBox textBox;
+        private System.Windows.Forms.ToolTip toolTip;
     }
 }

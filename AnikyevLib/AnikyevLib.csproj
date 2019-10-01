@@ -43,17 +43,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ControlCheckedListBoxSelected.cs">
+    <Compile Include="ControlCheckedListBox.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ControlCheckedListBoxSelected.Designer.cs">
-      <DependentUpon>ControlCheckedListBoxSelected.cs</DependentUpon>
+    <Compile Include="ControlCheckedListBox.Designer.cs">
+      <DependentUpon>ControlCheckedListBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTextBoxEmail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlTextBoxEmail.Designer.cs">
+      <DependentUpon>ControlTextBoxEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTreeView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlTreeView.Designer.cs">
+      <DependentUpon>ControlTreeView.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="ControlCheckedListBoxSelected.resx">
-      <DependentUpon>ControlCheckedListBoxSelected.cs</DependentUpon>
+    <EmbeddedResource Include="ControlCheckedListBox.resx">
+      <DependentUpon>ControlCheckedListBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlTextBoxEmail.resx">
+      <DependentUpon>ControlTextBoxEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlTreeView.resx">
+      <DependentUpon>ControlTreeView.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
