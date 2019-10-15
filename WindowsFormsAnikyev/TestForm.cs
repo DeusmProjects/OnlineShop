@@ -31,5 +31,16 @@ namespace WindowsFormsAnikyev
         {
             controlCheckedListBox1.CheckedIndeces = new List<int> { 0, 3};
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            componentCreateBackup1.OutputPath = "C:\\Users\\aniky\\Desktop\\University\\3 курс\\5 семестр\\Компонентно-ориентированное программирование";
+            Test[] tests = new Test[5];
+            for (int i = 0; i < tests.Length; i++)
+            {
+                tests[i] = new Test("name" + i, "descr" + i, 10 + i);
+            }
+            componentCreateBackup1.Save<Test>(tests, "myfile");
+        }
     }
 }

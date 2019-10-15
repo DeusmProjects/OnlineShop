@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -48,6 +49,7 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Test.cs" />
     <Compile Include="TestForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +82,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AnikyevLibNotVisual\AnikyevLibNotVisual.csproj">
+      <Project>{cc75ade3-573a-436e-a651-96ba2ca1c00f}</Project>
+      <Name>AnikyevLibNotVisual</Name>
+    </ProjectReference>
     <ProjectReference Include="..\AnikyevLib\AnikyevLib.csproj">
       <Project>{8565d126-adfb-4ded-b8ac-de7b2b891e19}</Project>
       <Name>AnikyevLib</Name>
