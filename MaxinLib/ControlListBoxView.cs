@@ -1,21 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Linq;
 using System.Windows.Forms;
+using TestForm;
 
 namespace MaxinLib
 {
-    public partial class ControlListBoxSelected : UserControl
+    public partial class ControlListBoxView : UserControl
     {
         private int _selectedIndex;
 
-        private event EventHandler _listBoxSelectedElementChange;
+        public string Pattern { get; set; }
 
-        public ControlListBoxSelected()
+        private event EventHandler _listBoxViewElementChange;
+
+        public ControlListBoxView()
         {
             InitializeComponent();
             listBox.SelectedIndexChanged += (sender, e) => {
-                _listBoxSelectedElementChange?.Invoke(sender, e);
+                _listBoxViewElementChange?.Invoke(sender, e);
             };
         }
 
@@ -37,16 +41,29 @@ namespace MaxinLib
         public string SelectedText => listBox.Text;
 
         [Category("Спецификация"), Description("Событие выбора элемента из списка")]
-        public event EventHandler ListBoxSelectedElementChange
+        public event EventHandler ListBoxViewElementChange
         {
-            add => _listBoxSelectedElementChange += value;
-            remove => _listBoxSelectedElementChange -= value;
+            add => _listBoxViewElementChange += value;
+            remove => _listBoxViewElementChange -= value;
         }
 
-        public void LoadEnumeration(List<string> elements)
+        public void AddElement(object element)
         {
-            elements.ForEach(element => listBox.Items.Add(element));
-        }
+            var type = element.GetType();
+            var props = type.GetProperties().ToList();
 
+            var names = props.Select(prop => prop.Name);
+
+            string outString = Pattern;
+
+            foreach (var name in names)
+            {
+                outString = outString.Replace("{" + name + "}", element.GetType().GetProperty(name).GetValue(element).ToString());
+            }
+
+
+
+            listBox.Items.Add(outString);
+        }
     }
 }
