@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.28922.388
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.705
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnikyevLib", "AnikyevLib\AnikyevLib.csproj", "{8565D126-ADFB-4DED-B8AC-DE7B2B891E19}"
 EndProject
@@ -10,6 +10,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharafutdinovaLib", "SharafutdinovaLib\SharafutdinovaLib.csproj", "{C7237617-E2B6-4735-857B-1F9E1A9C691F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestForm", "TestForm\TestForm.csproj", "{43C3DE14-E146-4EB5-AA4A-0CE9FBBDA530}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharafutdinovaForm", "SharafutdinovaForm\SharafutdinovaForm.csproj", "{A4C5BBE4-69B4-4311-922D-ABF9805DE2B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharafutdinovaLibNotVisual", "SharafutdinovaLibNotVisual\SharafutdinovaLibNotVisual.csproj", "{EC08AA96-BDB9-4B96-82BC-CFFDCF8A57F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsAnikyev", "WindowsFormsAnikyev\WindowsFormsAnikyev.csproj", "{0E9B8DB0-61DE-4310-AD43-D23EFDD382E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnikyevLibNotVisual", "AnikyevLibNotVisual\AnikyevLibNotVisual.csproj", "{CC75ADE3-573A-436E-A651-96BA2CA1C00F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +41,22 @@ Global
 		{43C3DE14-E146-4EB5-AA4A-0CE9FBBDA530}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43C3DE14-E146-4EB5-AA4A-0CE9FBBDA530}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43C3DE14-E146-4EB5-AA4A-0CE9FBBDA530}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4C5BBE4-69B4-4311-922D-ABF9805DE2B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4C5BBE4-69B4-4311-922D-ABF9805DE2B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4C5BBE4-69B4-4311-922D-ABF9805DE2B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4C5BBE4-69B4-4311-922D-ABF9805DE2B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC08AA96-BDB9-4B96-82BC-CFFDCF8A57F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC08AA96-BDB9-4B96-82BC-CFFDCF8A57F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC08AA96-BDB9-4B96-82BC-CFFDCF8A57F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC08AA96-BDB9-4B96-82BC-CFFDCF8A57F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E9B8DB0-61DE-4310-AD43-D23EFDD382E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E9B8DB0-61DE-4310-AD43-D23EFDD382E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E9B8DB0-61DE-4310-AD43-D23EFDD382E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E9B8DB0-61DE-4310-AD43-D23EFDD382E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC75ADE3-573A-436E-A651-96BA2CA1C00F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC75ADE3-573A-436E-A651-96BA2CA1C00F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC75ADE3-573A-436E-A651-96BA2CA1C00F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC75ADE3-573A-436E-A651-96BA2CA1C00F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

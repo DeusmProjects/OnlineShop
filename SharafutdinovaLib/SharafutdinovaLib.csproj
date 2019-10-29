@@ -33,6 +33,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -41,7 +43,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ComboBoxSelected.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ComboBoxSelected.Designer.cs">
+      <DependentUpon>ComboBoxSelected.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataTimePickerWithRange.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataTimePickerWithRange.Designer.cs">
+      <DependentUpon>DataTimePickerWithRange.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ValueTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ValueTable.Designer.cs">
+      <DependentUpon>ValueTable.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ComboBoxSelected.resx">
+      <DependentUpon>ComboBoxSelected.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataTimePickerWithRange.resx">
+      <DependentUpon>DataTimePickerWithRange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ValueTable.resx">
+      <DependentUpon>ValueTable.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MaxinLib\MaxinLib.csproj">
