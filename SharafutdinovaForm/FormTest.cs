@@ -20,7 +20,6 @@ namespace SharafutdinovaForm
         public string Adress;
     }
 
-
     public partial class FormTest : Form
     {
         public FormTest()
