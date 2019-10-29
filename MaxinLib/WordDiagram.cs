@@ -13,6 +13,11 @@ namespace MaxinLib
 {
     public partial class WordDiagram : Component
     {
+        public string DiagramName { get; set; }
+        public string Name { get; set; }
+        public string Value { get; set; }
+        public List<object> Data { get; set; }
+
         public WordDiagram()
         {
             InitializeComponent();
@@ -25,8 +30,13 @@ namespace MaxinLib
             InitializeComponent();
         }
 
-        public void CreateDiagram()
+        public void CreateDiagram(List<object> data, string diagramName, string name, string value)
         {
+            Data = data;
+            DiagramName = diagramName;
+            Name = name;
+            Value = value;
+
             string pathDocument = AppDomain.CurrentDomain.BaseDirectory + "diagram.docx";
 
             // создаём документ
@@ -37,15 +47,17 @@ namespace MaxinLib
             document.Save();
         }
 
-        private static Chart CreateBarChart()
+        private Chart CreateBarChart()
         {
-            // создаём столбцовую диаграмму
             BarChart barChart = new BarChart();
-            // отображаем легенду сверху диаграммы
+
             barChart.AddLegend(ChartLegendPosition.Top, false);
 
-            // создаём набор данных и добавляем в диаграмму
-            barChart.AddSeries(TestData.GetSeriesFirst());
+            var series = new Series(DiagramName);
+
+            series.Bind(Data, Name, Value);
+
+            barChart.AddSeries(series);
 
             return barChart;
         }
