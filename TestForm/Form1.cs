@@ -83,5 +83,10 @@ namespace TestForm
                 new { Mail = "third", Name = "danila" },
             });
         }
+
+        private void ButtonCreateDiagram_Click(object sender, EventArgs e)
+        {
+            wordDiagram.CreateDiagram();
+        }
     }
 }

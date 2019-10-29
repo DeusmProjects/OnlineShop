@@ -61,7 +61,7 @@ namespace MaxinLib
                 }
             }
 
-            excel.Application.ActiveWorkbook.SaveAs("doc.xlsx", Type.Missing,
+            excel.Application.ActiveWorkbook.SaveAs("report.xlsx", Type.Missing,
             Type.Missing, Type.Missing, Type.Missing, Type.Missing, Excel.XlSaveAsAccessMode.xlNoChange,
             Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
 
