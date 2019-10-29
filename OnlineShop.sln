@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxinLib", "MaxinLib\MaxinL
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharafutdinovaLib", "SharafutdinovaLib\SharafutdinovaLib.csproj", "{C7237617-E2B6-4735-857B-1F9E1A9C691F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestForm", "TestForm\TestForm.csproj", "{43C3DE14-E146-4EB5-AA4A-0CE9FBBDA530}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharafutdinovaForm", "SharafutdinovaForm\SharafutdinovaForm.csproj", "{A4C5BBE4-69B4-4311-922D-ABF9805DE2B5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharafutdinovaLibNotVisual", "SharafutdinovaLibNotVisual\SharafutdinovaLibNotVisual.csproj", "{EC08AA96-BDB9-4B96-82BC-CFFDCF8A57F3}"
@@ -35,6 +37,10 @@ Global
 		{C7237617-E2B6-4735-857B-1F9E1A9C691F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7237617-E2B6-4735-857B-1F9E1A9C691F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7237617-E2B6-4735-857B-1F9E1A9C691F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43C3DE14-E146-4EB5-AA4A-0CE9FBBDA530}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43C3DE14-E146-4EB5-AA4A-0CE9FBBDA530}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43C3DE14-E146-4EB5-AA4A-0CE9FBBDA530}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43C3DE14-E146-4EB5-AA4A-0CE9FBBDA530}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A4C5BBE4-69B4-4311-922D-ABF9805DE2B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A4C5BBE4-69B4-4311-922D-ABF9805DE2B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4C5BBE4-69B4-4311-922D-ABF9805DE2B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
