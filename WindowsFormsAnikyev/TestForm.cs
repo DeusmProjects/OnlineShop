@@ -42,5 +42,28 @@ namespace WindowsFormsAnikyev
             }
             componentCreateBackup1.Save<Test>(tests, "myfile");
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            componentExportDiagram1.SetCaptions(new List<string> { "Москва", "Ульяновск", "Казань", "Ростов", "Рязань" });
+            componentExportDiagram1.SetValues(new List<int> { 5, 10, 6, 1, 4});
+            componentExportDiagram1.Export(@"C:\Users\aniky\Desktop\University\3 курс\5 семестр\Компонентно-ориентированное программирование\diagramm.xls");
+            Console.WriteLine("Exported");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            componentExportReport1.SetHeaders(new List<string> { "Москва", "Ульяновск", "Казань"});
+            componentExportReport1.SetValues(new List<List<string>> {
+                new List<string> { "МоскваСтрока1", "УльяновскСтрока1", "КазаньСтрока1"},
+                new List<string> { "МоскваСтрока2", "УльяновскСтрока2", "КазаньСтрока2"},
+                new List<string> { "МоскваСтрока3", "УльяновскСтрока3", "КазаньСтрока3"},
+                new List<string> { "МоскваСтрока4", "УльяновскСтрока4", "КазаньСтрока4" } });
+            componentExportReport1.SetStringConcatenation(new List<int[]> {
+                new int[] { 0, 2, 2},
+                new int[] { 1, 1, 2}});
+            componentExportReport1.Export(@"C:\Users\aniky\Desktop\University\3 курс\5 семестр\Компонентно-ориентированное программирование\report.pdf");
+            Console.WriteLine("Exported");
+        }
     }
 }
