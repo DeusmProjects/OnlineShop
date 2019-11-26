@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SharafutdinovaForm
+namespace ViewForm
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace SharafutdinovaForm
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormTest());
+            Application.Run(new MainForm());
         }
     }
 }

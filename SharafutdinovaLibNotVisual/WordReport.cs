@@ -103,7 +103,7 @@ namespace SharafutdinovaLibNotVisual
 
         private void AddData(Table table, IEnumerable<object> objects)
         {
-            var fields = objects.First().GetType().GetFields();            
+            var fields = objects.First().GetType().GetProperties();            
 
             for (var i = 0; i < columns.Length; i++)
             {

@@ -30,14 +30,14 @@ namespace MaxinLib
             InitializeComponent();
         }
 
-        public void CreateDiagram(List<object> data, string diagramName, string name, string value)
+        public void CreateDiagram(IEnumerable<object> data, string diagramName, string name, string value, string path)
         {
-            Data = data;
+            Data = data.ToList();
             DiagramName = diagramName;
             Name = name;
             Value = value;
 
-            string pathDocument = AppDomain.CurrentDomain.BaseDirectory + "diagram.docx";
+            string pathDocument = path + ".docx";
 
             // создаём документ
             DocX document = DocX.Create(pathDocument);

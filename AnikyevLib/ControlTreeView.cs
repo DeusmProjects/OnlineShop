@@ -12,6 +12,11 @@ namespace AnikyevLib
 {
     public partial class ControlTreeView : UserControl
     {
+        public void Clear()
+        {
+            treeView1.Nodes.Clear();
+        }
+
         public bool AddNode(string text, string path)
         {
             var pathList = path.Split('/');
@@ -29,9 +34,9 @@ namespace AnikyevLib
         {
             for (int i = 0; i < nodes.Count; i++)
             {
-                if (nodes[0].Text == text)
+                if (nodes[i].Text == text)
                 {
-                    return nodes[0].Nodes;
+                    return nodes[i].Nodes;
                 }
             }
             return null;

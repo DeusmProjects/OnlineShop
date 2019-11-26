@@ -46,6 +46,7 @@ namespace SharafutdinovaLib
         {
             InitializeComponent();
             comboBox.SelectedIndexChanged += (sender, e) => {
+                _selectedIndex = comboBox.SelectedIndex;
                 _comboBoxSelectedElementChange?.Invoke(sender, e);
             };
         }
