@@ -21,8 +21,9 @@ namespace SharafutdinovaLib
 
         public void AddData(IEnumerable<object> objects, string columns)
         {
+            dataGridView.Rows.Clear();
+            dataGridView.Columns.Clear();
             this.columns = columns.Split(',');
-
             MakeColumns();
             MakeRows(objects);
         }
@@ -37,7 +38,7 @@ namespace SharafutdinovaLib
 
         private void MakeRow(object o)
         {
-            var fields = o.GetType().GetFields();
+            var fields = o.GetType().GetProperties();
             var values = new List<object>();
             foreach(var column in columns)
             {

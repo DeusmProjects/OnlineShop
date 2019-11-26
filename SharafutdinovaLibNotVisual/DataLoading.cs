@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -27,9 +28,9 @@ namespace SharafutdinovaLibNotVisual
         }
 
 
-        public T LoadObject<T>(string zipPath)
+        public List<T> LoadObject<T>(string zipPath)
         {
-            string path="";
+            string path = "";
             using (ZipArchive archive = ZipFile.OpenRead(zipPath))
             {
                 foreach (ZipArchiveEntry entry in archive.Entries)
@@ -40,18 +41,31 @@ namespace SharafutdinovaLibNotVisual
                     }
                 }
             }
-            using (var ms = new MemoryStream(Encoding.Unicode.GetBytes(path)))
+            //using (var ms = new MemoryStream(Encoding.Unicode.GetBytes(path)))
+            //{
+            //    DataContractJsonSerializer deserializer = new DataContractJsonSerializer(typeof(T));
+            //    T myTest = (T)deserializer.ReadObject(ms);
+            //    var type = myTest.GetType();
+            //    var attr = (DataContractAttribute)Attribute.GetCustomAttribute(type, typeof(DataContractAttribute));
+            //    if (attr == null)
+            //    {
+            //        throw new Exception("Класс нельзя десериализовать");
+            //    }
+            //    return myTest;
+            //}        
+
+            string result = "";
+            path = @"C:\Users\ВИКА\Desktop\myfile.json";
+            if (File.Exists(@path))
             {
-                DataContractJsonSerializer deserializer = new DataContractJsonSerializer(typeof(T));
-                T myTest = (T)deserializer.ReadObject(ms);
-                var type = myTest.GetType();
-                var attr = (DataContractAttribute)Attribute.GetCustomAttribute(type, typeof(DataContractAttribute));
-                if (attr == null)
-                {
-                    throw new Exception("Класс нельзя десериализовать");
-                }
-                return myTest;
-            }        
+                string[] json = File.ReadAllLines(@path);
+                result = String.Concat(json);
+            }
+            var arrayModels = new List<T>();
+            arrayModels = JsonConvert.DeserializeObject<List<T>>(result);
+            return arrayModels;
+
+
         }
     }
 }
