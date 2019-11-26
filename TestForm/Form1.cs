@@ -86,7 +86,7 @@ namespace TestForm
 
         private void ButtonCreateDiagram_Click(object sender, EventArgs e)
         {
-            wordDiagram.CreateDiagram();
+          //  wordDiagram.CreateDiagram();
         }
     }
 }

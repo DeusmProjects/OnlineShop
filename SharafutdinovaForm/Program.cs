@@ -16,7 +16,7 @@ namespace SharafutdinovaForm
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormTest2());
+            Application.Run(new FormTest());
         }
     }
 }
