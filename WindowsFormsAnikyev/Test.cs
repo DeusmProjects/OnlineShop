@@ -25,5 +25,10 @@ namespace WindowsFormsAnikyev
             this.description = description;
             this.price = price;
         }
+
+        public Test()
+        {
+
+        }
     }
 }

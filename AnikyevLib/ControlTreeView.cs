@@ -17,7 +17,12 @@ namespace AnikyevLib
             treeView1.Nodes.Clear();
         }
 
-        public bool AddNode(string text, string path)
+        public T GetSelected<T>()
+        {
+            return (T)treeView1.SelectedNode.Tag;
+        }
+
+        public bool AddNode<T>(T info, string text, string path)
         {
             var pathList = path.Split('/');
             var nodes = treeView1.Nodes;
@@ -26,8 +31,9 @@ namespace AnikyevLib
                 nodes = Find(nodes, pathList[i]);
                 if (nodes == null) return false;
             }
-            if (Find(nodes, text) != null) return false;
-            nodes.Add(new TreeNode(text));
+            var node = new TreeNode(text);
+            node.Tag = info;
+            nodes.Add(node);
             return true;
         }
         private TreeNodeCollection Find(TreeNodeCollection nodes, string text)

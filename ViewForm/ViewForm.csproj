@@ -61,6 +61,7 @@
       <HintPath>..\packages\iTextSharp.5.5.13.1\lib\itextsharp.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.IO.Compression" />
@@ -84,6 +85,7 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Manager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="MainForm.resx">
@@ -145,6 +147,10 @@
     <ProjectReference Include="..\ImplementationsDB\ImplementationsDB.csproj">
       <Project>{a76662a5-b153-4958-9155-2467b5bfdb09}</Project>
       <Name>ImplementationsDB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Interfaces\Interfaces.csproj">
+      <Project>{0E950178-A2AF-45B6-841C-CBBB3818469D}</Project>
+      <Name>Interfaces</Name>
     </ProjectReference>
     <ProjectReference Include="..\MaxinLib\MaxinLib.csproj">
       <Project>{0bd271e4-59ee-4381-941e-9255b280feca}</Project>

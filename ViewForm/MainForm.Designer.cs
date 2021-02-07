@@ -40,20 +40,25 @@
             this.buttonCreateBackup = new System.Windows.Forms.Button();
             this.buttonWordReport = new System.Windows.Forms.Button();
             this.buttonWordDiagram = new System.Windows.Forms.Button();
+            this.comboBoxOperation = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.buttonOperate = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // comboBoxSelected1
             // 
             this.comboBoxSelected1.Location = new System.Drawing.Point(463, 12);
+            this.comboBoxSelected1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxSelected1.Name = "comboBoxSelected1";
             this.comboBoxSelected1.SelectedIndex = 0;
-            this.comboBoxSelected1.Size = new System.Drawing.Size(294, 27);
+            this.comboBoxSelected1.Size = new System.Drawing.Size(293, 27);
             this.comboBoxSelected1.TabIndex = 1;
             // 
             // controlTextBoxInput1
             // 
             this.controlTextBoxInput1.IsChecked = false;
-            this.controlTextBoxInput1.Location = new System.Drawing.Point(463, 45);
+            this.controlTextBoxInput1.Location = new System.Drawing.Point(463, 46);
+            this.controlTextBoxInput1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.controlTextBoxInput1.Name = "controlTextBoxInput1";
             this.controlTextBoxInput1.Size = new System.Drawing.Size(287, 58);
             this.controlTextBoxInput1.TabIndex = 2;
@@ -61,9 +66,10 @@
             // 
             // buttonCreate
             // 
-            this.buttonCreate.Location = new System.Drawing.Point(463, 109);
+            this.buttonCreate.Location = new System.Drawing.Point(464, 237);
+            this.buttonCreate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonCreate.Name = "buttonCreate";
-            this.buttonCreate.Size = new System.Drawing.Size(294, 23);
+            this.buttonCreate.Size = new System.Drawing.Size(293, 23);
             this.buttonCreate.TabIndex = 3;
             this.buttonCreate.Text = " Создать";
             this.buttonCreate.UseVisualStyleBackColor = true;
@@ -71,17 +77,19 @@
             // 
             // buttonRemove
             // 
-            this.buttonRemove.Location = new System.Drawing.Point(463, 138);
+            this.buttonRemove.Location = new System.Drawing.Point(463, 264);
+            this.buttonRemove.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonRemove.Name = "buttonRemove";
-            this.buttonRemove.Size = new System.Drawing.Size(294, 23);
+            this.buttonRemove.Size = new System.Drawing.Size(293, 23);
             this.buttonRemove.TabIndex = 4;
-            this.buttonRemove.Text = "Удалить";
+            this.buttonRemove.Text = "Удалить все";
             this.buttonRemove.UseVisualStyleBackColor = true;
             this.buttonRemove.Click += new System.EventHandler(this.buttonRemove_Click);
             // 
             // controlTreeView1
             // 
             this.controlTreeView1.Location = new System.Drawing.Point(12, 12);
+            this.controlTreeView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.controlTreeView1.Name = "controlTreeView1";
             this.controlTreeView1.Size = new System.Drawing.Size(445, 426);
             this.controlTreeView1.TabIndex = 0;
@@ -100,8 +108,9 @@
             // buttonCreateBackup
             // 
             this.buttonCreateBackup.Location = new System.Drawing.Point(463, 335);
+            this.buttonCreateBackup.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonCreateBackup.Name = "buttonCreateBackup";
-            this.buttonCreateBackup.Size = new System.Drawing.Size(294, 23);
+            this.buttonCreateBackup.Size = new System.Drawing.Size(293, 23);
             this.buttonCreateBackup.TabIndex = 5;
             this.buttonCreateBackup.Text = "Создать бекап";
             this.buttonCreateBackup.UseVisualStyleBackColor = true;
@@ -109,9 +118,10 @@
             // 
             // buttonWordReport
             // 
-            this.buttonWordReport.Location = new System.Drawing.Point(463, 365);
+            this.buttonWordReport.Location = new System.Drawing.Point(463, 366);
+            this.buttonWordReport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonWordReport.Name = "buttonWordReport";
-            this.buttonWordReport.Size = new System.Drawing.Size(294, 23);
+            this.buttonWordReport.Size = new System.Drawing.Size(293, 23);
             this.buttonWordReport.TabIndex = 6;
             this.buttonWordReport.Text = "Отчет в формате Word";
             this.buttonWordReport.UseVisualStyleBackColor = true;
@@ -120,18 +130,52 @@
             // buttonWordDiagram
             // 
             this.buttonWordDiagram.Location = new System.Drawing.Point(464, 395);
+            this.buttonWordDiagram.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonWordDiagram.Name = "buttonWordDiagram";
-            this.buttonWordDiagram.Size = new System.Drawing.Size(293, 23);
+            this.buttonWordDiagram.Size = new System.Drawing.Size(292, 23);
             this.buttonWordDiagram.TabIndex = 7;
             this.buttonWordDiagram.Text = "Диаграмма в формате Word";
             this.buttonWordDiagram.UseVisualStyleBackColor = true;
             this.buttonWordDiagram.Click += new System.EventHandler(this.buttonWordDiagram_Click);
             // 
+            // comboBoxOperation
+            // 
+            this.comboBoxOperation.FormattingEnabled = true;
+            this.comboBoxOperation.Location = new System.Drawing.Point(463, 129);
+            this.comboBoxOperation.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxOperation.Name = "comboBoxOperation";
+            this.comboBoxOperation.Size = new System.Drawing.Size(292, 24);
+            this.comboBoxOperation.TabIndex = 8;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(460, 106);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(101, 17);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Тип операции";
+            // 
+            // buttonOperate
+            // 
+            this.buttonOperate.Location = new System.Drawing.Point(463, 161);
+            this.buttonOperate.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonOperate.Name = "buttonOperate";
+            this.buttonOperate.Size = new System.Drawing.Size(293, 26);
+            this.buttonOperate.TabIndex = 12;
+            this.buttonOperate.Text = "Выполнить";
+            this.buttonOperate.UseVisualStyleBackColor = true;
+            this.buttonOperate.Click += new System.EventHandler(this.buttonOperate_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(774, 450);
+            this.ClientSize = new System.Drawing.Size(773, 450);
+            this.Controls.Add(this.buttonOperate);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.comboBoxOperation);
             this.Controls.Add(this.buttonWordDiagram);
             this.Controls.Add(this.buttonWordReport);
             this.Controls.Add(this.buttonCreateBackup);
@@ -140,9 +184,11 @@
             this.Controls.Add(this.controlTextBoxInput1);
             this.Controls.Add(this.comboBoxSelected1);
             this.Controls.Add(this.controlTreeView1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MainForm";
             this.Text = "MainForm";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -159,5 +205,8 @@
         private System.Windows.Forms.Button buttonCreateBackup;
         private System.Windows.Forms.Button buttonWordReport;
         private System.Windows.Forms.Button buttonWordDiagram;
+        private System.Windows.Forms.ComboBox comboBoxOperation;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button buttonOperate;
     }
 }
